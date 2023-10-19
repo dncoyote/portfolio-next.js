@@ -25,3 +25,32 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.name-logo {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.3em;
+  color: white
+}
+
+.blink {
+  height: 1rem;
+  width: 10px;
+  animation: blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 3px solid white;
+  display: block;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.dev-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.3em;
+  color: white
+}

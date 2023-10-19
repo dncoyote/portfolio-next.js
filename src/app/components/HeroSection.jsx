@@ -7,7 +7,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    // <section className="lg:py-16 h-screen flex flex-col justify-center items-center">
+        <section className="lg:py-16 px-6 ">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -16,15 +17,19 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Hello, I&apos;m{" "}<span className="dev-name underline "> BILAL
+              </span>.
+            </span> */}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hello, I&apos;m{" "} Bilal.
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Bilal",
+                "Developer",
                 1000,
-                "Software Dev",
+                "3D Artist",
                 1000,
                 "Creator",
                 1000,
@@ -32,29 +37,28 @@ const HeroSection = () => {
                 1000,
               ]}
               wrapper="span"
-              speed={50}
+              speed={40}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+          Wandering through the realms of art, technology, and existence 🎨💻🌟
           </p>
           <div>
             <Link
-              href="/contact"
+              href="/BilalAhmed_SeniorSoftwareEngineer-Resume.pdf"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              Resume
             </Link>
-            <Link
+            {/* <Link
               href="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
         <motion.div
