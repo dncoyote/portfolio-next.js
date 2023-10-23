@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container p-4 md:p-8 flex flex-col md:flex-row justify-between items-center">
         {/* <span className="name-logo">bilal.</span> */}
         <div className="flex items-center">
-          <Link href={"https://github.com/dncoyote"} className="name-logo" spy smooth offset={50} duration={500} to="home">
+          <Link href={"https://github.com/dncoyote"} target="_blank" className="name-logo" spy smooth offset={50} duration={500} to="home">
             dncoyote.
           </Link>
           <span className="blink"></span>
